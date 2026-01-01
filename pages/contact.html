@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GWT Trading services - Partner-supported critical infrastructure services including electrical, mechanical, logistics, and lifecycle support.">
-  <title>Our Services | GWT Trading</title>
+  <meta name="description" content="Contact GWT Trading - Enquiries, partnerships, and service communications for critical infrastructure services.">
+  <title>Contact | GWT Trading</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" type="image/png" href="../images/logo.png">
 </head>
@@ -21,7 +21,7 @@
         <a href="../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <div class="nav-dropdown">
-          <span class="nav-link nav-dropdown-trigger active">Services</span>
+          <span class="nav-link nav-dropdown-trigger">Services</span>
           <div class="nav-dropdown-menu">
             <a href="services.html" class="nav-dropdown-link">Services Overview</a>
             <a href="service-contracts.html" class="nav-dropdown-link">Service Contracts</a>
@@ -30,7 +30,7 @@
         <a href="capacity-support.html" class="nav-link">Capacity-Based Support</a>
         <a href="proreports.html" class="nav-link">ProReports™</a>
         <a href="partner.html" class="nav-link">Partner With Us</a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm active">Contact</a>
       </nav>
       
       <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -62,350 +62,143 @@
   <section class="page-header">
     <div class="container">
       <div class="page-header-content">
-        <span class="page-header-label">Our Services</span>
-        <h1>Partner-Supported Critical Infrastructure Services</h1>
-        <p class="page-header-desc">White-label service delivery aligned to system size and operational risk, supporting partners in delivering services to their customers.</p>
+        <span class="page-header-label">Get in Touch</span>
+        <h1>Contact Us</h1>
+        <p class="page-header-desc">Enquiries, partnerships, and service communications.</p>
       </div>
     </div>
   </section>
 
-  <!-- Intro -->
-  <section class="service-intro">
-    <div class="container">
-      <p>GWT Trading provides behind-the-scenes critical infrastructure services for organisations operating in live, high-risk environments. All services are delivered in support of our partners, under their brand, using ISO-aligned systems and professional reporting via ProReports™.</p>
-      <p style="margin-bottom: 0;">Our services are designed to scale across critical power, precision cooling, logistics, and lifecycle support, with clear responsibility aligned to system size and operational risk.</p>
-    </div>
-  </section>
-
-  <!-- How Services Are Structured -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Our Approach</span>
-        <h2 class="section-title">How Our Services Are Structured</h2>
-        <p class="section-desc">GWT services are organised in two complementary ways, allowing partners to engage flexibly while maintaining clarity around ownership, risk, and lifecycle responsibility.</p>
-      </div>
-      
-      <div class="grid grid-2" style="max-width: 800px;">
-        <div class="card">
-          <h4 class="card-title">By Service Type</h4>
-          <p class="card-text mb-0">What we deliver — the specific capabilities and technical services we provide.</p>
-        </div>
-        <div class="card">
-          <h4 class="card-title">By Capacity Range</h4>
-          <p class="card-text mb-0">How delivery and responsibility scale — based on system size and operational risk.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service Capabilities -->
+  <!-- Contact Form Section -->
   <section class="section">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-label">What We Deliver</span>
-        <h2 class="section-title">Service Capabilities</h2>
-      </div>
-      
-      <!-- Logistics -->
-      <div class="card mb-8" id="logistics">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-              </svg>
+      <div class="two-col" style="gap: var(--space-16);">
+        <!-- Form -->
+        <div>
+          <h2 class="mb-8">Submit an Enquiry</h2>
+          
+          <!-- Netlify Forms - the form will work when deployed to Netlify -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+            <!-- Hidden field for Netlify -->
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot field for spam prevention -->
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            
+            <div class="form-group">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
             </div>
-            <h3>Critical Environment Logistics & Asset Movement</h3>
-            <p>Specialised freight and asset movement services designed for live, operational environments where precision, planning, and risk control are critical.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Sensitive and high-value equipment transport</li>
-              <li>Live-site access, staging, and positioning</li>
-              <li>Heavy freight and lift & shift operations</li>
-              <li>Free Issue equipment handling and logistics coordination</li>
-              <li>White-label delivery documentation</li>
-            </ul>
-          </div>
+            
+            <div class="form-group">
+              <label for="organisation" class="form-label">Organisation *</label>
+              <input type="text" id="organisation" name="organisation" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="enquiry-type" class="form-label">Nature of Enquiry *</label>
+              <select id="enquiry-type" name="enquiry-type" class="form-select" required>
+                <option value="">Select an option...</option>
+                <option value="partner">Partner with GWT Trading</option>
+                <option value="capability">Capability-based support enquiry</option>
+                <option value="service">Service or operational enquiry</option>
+                <option value="documentation">Documentation or reporting request</option>
+                <option value="feedback">Feedback or complaint</option>
+                <option value="other">Other / general enquiry</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-textarea" required placeholder="Please describe your enquiry..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <div class="form-checkbox">
+                <input type="checkbox" id="existing-partner" name="existing-partner" value="yes">
+                <label for="existing-partner">I am a current GWT partner</label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Enquiry</button>
+          </form>
+          
+          <p style="font-size: var(--text-sm); color: var(--color-gray-500); margin-top: var(--space-4);">All enquiries are handled professionally and in confidence, aligned to GWT Trading's governance and service frameworks.</p>
         </div>
-      </div>
-
-      <!-- Electrical -->
-      <div class="card mb-8" id="electrical">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <h3>Electrical Installation</h3>
-            <p>Licensed electrical installation services supporting critical power systems across a range of capacities.</p>
+        
+        <!-- Info -->
+        <div>
+          <h3 class="mb-6">How We Use This Page</h3>
+          <p>This form is designed to support:</p>
+          <ul class="feature-list mb-8">
+            <li>Partnership enquiries</li>
+            <li>Service capability discussions</li>
+            <li>Documentation and reporting requests</li>
+            <li>Operational feedback or concerns</li>
+            <li>General enquiries relating to GWT services</li>
+          </ul>
+          <p>All submissions are reviewed and routed to the appropriate team.</p>
+          
+          <div class="card mt-8">
+            <h4 class="card-title">Partner & Capability Enquiries</h4>
+            <p class="card-text">If you are exploring a partnership with GWT Trading, this page allows you to start a partner discussion, understand capability-based support options, and align service delivery expectations.</p>
+            <p class="card-text mb-0">We work exclusively in a partner-supported, white-label delivery model.</p>
           </div>
-          <div>
-            <ul class="feature-list">
-              <li>UPS installation (single- and three-phase)</li>
-              <li>Bypass, protection, and distribution works</li>
-              <li>Integration with existing electrical infrastructure</li>
-              <li>Capacity-aligned delivery and vendor-supported works</li>
-              <li>White-label electrical documentation and handover packs</li>
-            </ul>
+          
+          <div class="card mt-4">
+            <h4 class="card-title">Documentation & Reporting</h4>
+            <p class="card-text mb-0">This page may also be used to request service documentation, ProReports™ outputs, asset or project records, and reporting clarification or follow-up.</p>
           </div>
-        </div>
-      </div>
-
-      <!-- CETs -->
-      <div class="card mb-8" id="cet">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-            <h3>Critical Environment Technicians</h3>
-            <p>Specialist technical support for work performed inside live, risk-managed environments.</p>
+          
+          <div class="card mt-4">
+            <h4 class="card-title">Feedback & Complaints</h4>
+            <p class="card-text mb-0">GWT Trading is committed to disciplined execution and continuous improvement. Feedback and concerns are handled in accordance with our ISO-aligned management systems.</p>
           </div>
-          <div>
-            <ul class="feature-list">
-              <li>Live-site technical execution</li>
-              <li>Site auditing and technical assessments</li>
-              <li>Second-person and specialist contractor support</li>
-              <li>OEM- and integrator-aligned delivery assistance</li>
-              <li>White-label audit and activity reporting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mechanical -->
-      <div class="card mb-8" id="mechanical">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3>Mechanical Systems & Precision Cooling</h3>
-            <p>Mechanical and cooling services supporting environments where temperature control is mission-critical.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Precision cooling installation and integration</li>
-              <li>CRAC, in-row, and supplementary cooling systems</li>
-              <li>Live-site mechanical works</li>
-              <li>Vendor-aligned mechanical installation support</li>
-              <li>White-label mechanical documentation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Battery -->
-      <div class="card mb-8" id="battery">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6M12 9v6" />
-              </svg>
-            </div>
-            <h3>Battery Systems</h3>
-            <p>Battery services supporting critical power reliability and lifecycle planning.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Battery installation, handling, and removal</li>
-              <li>Capacity and impedance testing</li>
-              <li>Battery monitoring systems installation and support</li>
-              <li>Vendor-directed replacement assistance</li>
-              <li>White-label battery reports and asset records</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Commissioning -->
-      <div class="card mb-8" id="commissioning">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-              </svg>
-            </div>
-            <h3>Commissioning, Testing & Planned Lifecycle Replacements</h3>
-            <p>Controlled technical activities performed within live environments, aligned to system size and vendor requirements.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>UPS start-up and functional testing</li>
-              <li>Site Acceptance Testing (SAT)</li>
-              <li>Planned lifecycle replacement activities</li>
-              <li>Vendor-led commissioning and replacement support</li>
-              <li>White-label commissioning and replacement documentation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maintenance -->
-      <div class="card mb-8" id="maintenance">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <h3>Maintenance, Predictive Monitoring & Operational Support</h3>
-            <p>Lifecycle support services for supported capacity ranges, focused on reliability and continuity.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Preventative maintenance programs</li>
-              <li>Predictive maintenance for monitored sites</li>
-              <li>Corrective maintenance and fault response</li>
-              <li>Basic and comprehensive maintenance contracts</li>
-              <li>SLA-backed response and MTTR commitments</li>
-              <li>White-label service and compliance reporting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- ProReports -->
-      <div class="card mb-8" id="proreports">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3>Monitoring, Reporting & Asset Visibility (ProReports™)</h3>
-            <p>The reporting platform underpinning all GWT services.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>White-label, ISO-aligned reporting</li>
-              <li>Asset registers and lifecycle documentation</li>
-              <li>Monitoring, alarming, and performance visibility</li>
-              <li>Monthly asset overview reporting</li>
-              <li>Project-specific reporting for rollouts and audits</li>
-            </ul>
-            <a href="proreports.html" class="btn btn-outline btn-sm mt-4">View ProReports™</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Partner Support -->
-      <div class="card" id="partner-support">
-        <div class="service-grid">
-          <div>
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </div>
-            <h3>Vendor, Integrator & Partner Support Services</h3>
-            <p>Flexible support services enabling partners to scale delivery without increasing headcount.</p>
-          </div>
-          <div>
-            <ul class="feature-list">
-              <li>Second-person and specialist manpower</li>
-              <li>Installation and delivery assistance</li>
-              <li>Site readiness and deployment support</li>
-              <li>Documentation, reporting, and handover assistance</li>
-              <li>White-label service enablement</li>
-            </ul>
+          
+          <div class="mt-8" style="padding: var(--space-6); background: rgba(74, 93, 35, 0.1); border-radius: var(--radius-md); border: 1px solid rgba(74, 93, 35, 0.2);">
+            <h4 style="color: var(--color-white); margin-bottom: var(--space-3);">Important Note</h4>
+            <p style="font-size: var(--text-sm); color: var(--color-gray-300); margin-bottom: 0;">GWT Trading operates as a backend, white-label service partner. We do not provide direct consumer services. All engagements are assessed for alignment with our capability model.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Capacity Based Support -->
+  <!-- What Happens Next -->
   <section class="section section-dark">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-label">How We Scale</span>
-        <h2 class="section-title">Service Delivery by Capacity Range</h2>
-        <p class="section-desc">For clarity, GWT services scale across three critical power ranges.</p>
-      </div>
-      
-      <div class="grid grid-3">
-        <div class="card text-center">
-          <h4 class="card-title" style="color: #5dade2;">0–10 kVA</h4>
-          <p class="card-text">Partner-supported full lifecycle services</p>
-        </div>
-        <div class="card text-center">
-          <h4 class="card-title" style="color: #f39c12;">11–40 kVA</h4>
-          <p class="card-text">Scalable partner delivery with selected lifecycle support</p>
-        </div>
-        <div class="card text-center">
-          <h4 class="card-title" style="color: #58d68d;">41–1000 kVA</h4>
-          <p class="card-text">Vendor-aligned installation and live-site support</p>
-        </div>
-      </div>
-      
-      <div class="text-center mt-8">
-        <a href="capacity-support.html" class="btn btn-primary">Explore Capacity-Based Support</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- White-Label -->
-  <section class="section">
     <div class="container container-narrow">
       <div class="section-header center">
-        <span class="section-label">White-Label by Design</span>
-        <h2 class="section-title">Your Brand, Our Execution</h2>
-        <p class="section-desc">All GWT services can be delivered under your brand, aligned to your service model and customer commitments.</p>
+        <span class="section-label">Next Steps</span>
+        <h2 class="section-title">What Happens After Submission</h2>
       </div>
       
-      <p class="text-center">Professional documentation, reporting, and asset intelligence are provided via ProReports™, ensuring a consistent and transparent customer experience.</p>
-    </div>
-  </section>
-
-  <!-- Why Partners Choose -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header center">
-        <span class="section-label">The GWT Difference</span>
-        <h2 class="section-title">Why Partners Choose GWT Trading</h2>
-      </div>
-      
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <ul class="feature-list">
-          <li>Extend service capability without increasing internal resources</li>
-          <li>Access electrical, mechanical, logistics, and CET expertise</li>
-          <li>Maintain customer ownership and brand alignment</li>
-        </ul>
-        <ul class="feature-list">
-          <li>Operate confidently in live, critical environments</li>
-          <li>Deliver professional, audit-ready reporting</li>
-          <li>ISO-aligned systems and disciplined execution</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Explore Our Services?</h2>
-        <p>Get in touch to discuss how GWT Trading can support your service delivery.</p>
-        <div class="cta-actions">
-          <a href="capacity-support.html" class="btn btn-primary btn-lg">Explore Services by Capacity</a>
-          <a href="partner.html" class="btn btn-secondary btn-lg">Partner With Us</a>
+      <div class="grid grid-3" style="gap: var(--space-4);">
+        <div class="card text-center">
+          <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-sage-light); margin-bottom: var(--space-2);">1</div>
+          <p class="mb-0" style="font-size: var(--text-sm);">Your enquiry is logged within our internal framework</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-sage-light); margin-bottom: var(--space-2);">2</div>
+          <p class="mb-0" style="font-size: var(--text-sm);">It is assessed and directed to the appropriate function</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: var(--text-3xl); font-weight: 700; color: var(--color-sage-light); margin-bottom: var(--space-2);">3</div>
+          <p class="mb-0" style="font-size: var(--text-sm);">A response is issued based on the nature and priority</p>
         </div>
       </div>
+      
+      <p class="text-center mt-8" style="color: var(--color-gray-400);">This structured approach ensures transparency, accountability, and appropriate escalation where necessary.</p>
     </div>
   </section>
 
